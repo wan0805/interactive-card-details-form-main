@@ -31,7 +31,7 @@ Users should be able to:
 ![](./screenshot.jpg)
 
 ### Desktop
-![desktop](./src/design/desktop-design.jpg)
+![desktop](./assets/src/design/desktop-design.jpg)
 
 ### Mobile
 ![mobile](./src/design/mobile-design.jpg)
