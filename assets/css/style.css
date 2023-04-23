@@ -285,3 +285,19 @@ body{
 	}
 
 }
+@media (max-width: 380px){
+	.card__name{
+		font-size: 12px
+	}
+
+	.card__number{
+		font-size: 18px;
+	}
+	.card__data,.card__codeSecurity{
+		font-size: 12px;
+	}
+	.card__codeSecurity{
+		top:45%;
+		right:-225px;
+	}
+}
