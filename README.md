@@ -31,10 +31,10 @@ Users should be able to:
 ![](./screenshot.jpg)
 
 ### Desktop
-![desktop](./assets/src/design/desktop-design.jpg)
+![desktop](./assets/design/desktop-design.jpg)
 
 ### Mobile
-![mobile](./src/design/mobile-design.jpg)
+![mobile](./assets/design/mobile-design.jpg)
 
 ### Links
 
