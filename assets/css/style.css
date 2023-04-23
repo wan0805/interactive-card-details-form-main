@@ -1,0 +1,287 @@
+body{
+	height: 100vh;
+	background-image: url("../images/bg-main-desktop.png");
+	background-repeat: no-repeat;
+	padding: 6rem;
+}
+.main{
+	height:100%;
+	display:grid;
+	grid-template-columns: repeat(2,50%);
+}
+.left__container{
+	grid-column: 1/2;
+	color: hsl(0, 0%, 100%);
+}
+.right__container{
+	grid-column:2/-1;
+}
+.card{
+	width: 70%;
+	height: 220px;
+	border-radius: 9px;
+	box-shadow: -10px 3px 20px 9px  hsla(278, 94%, 2% ,15%);
+	background-size: cover;
+}
+.card--front{
+	background-image: url("../images/bg-card-front.png");
+	background-repeat: no-repeat;
+	margin-bottom: 1.6rem;
+	padding:1.35rem;
+}
+.card__logo{
+	height: 35px;
+	margin-bottom: 2.8rem;
+}
+.card__number{
+	font-size:1.550rem;
+	font-weight: 500;
+	letter-spacing: 2px;
+	margin-bottom: 1.4rem;
+}
+.card__information{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.card__name{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.card--back{
+	background-image: url("../images/bg-card-back.png");
+	background-repeat: no-repeat;
+	margin-left: 5rem;
+
+}
+.card__codeSecurity{
+	position: relative;
+	top: 44%;
+	right:-320px;
+	max-width: 3ch;
+}
+
+/* Refer Right Container */
+
+.form{
+	width: 80%;
+	height: 400px;
+	margin: 3rem 0 0 5.5rem;
+	display:flex;
+	flex-direction: column;
+}
+.form__control + .form__control{
+	margin: 13px 0;
+}
+
+.form__label{
+	color:hsl(278, 68%, 11%);
+	text-transform: uppercase;
+	margin-bottom: 10px;
+
+}
+.input{
+	width: 100%;
+	height: 40px;
+	border-radius: 6px;
+	border:1px solid hsl(270, 3%, 87%);
+	padding-left: 1rem;
+	color:hsl(278, 68%, 11%);
+	font-size: 1rem;
+
+}
+.input::placeholder{
+	font-family: 'Space Grotesk', sans-serif;
+	font-size:1rem;
+	color:hsl(270, 3%, 87%);
+}
+
+.input:focus{
+	outline: none;
+	border-top:2px solid hsl(249, 99%, 64%);
+	border-bottom:2px solid hsl(278, 94%, 30%);
+	border-left:2px solid hsl(249, 99%, 64%);
+	border-right:2px solid hsl(278, 94%, 30%);
+}
+
+.message{
+	color: hsl(0, 100%, 66%);
+	font-size: 13px;
+	font-weight:500;
+	display:block;
+	opacity: 0;
+}
+.error{
+	border-color: hsl(0, 100%, 66%);
+	opacity: 1;
+	display: block;
+}
+.form__information{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 55% 45%; 
+	
+
+}
+.form--data{
+	grid-column: 1/2;
+}
+#data--month{
+	width: 40%;
+	display: inline-block;
+}
+#data--year{
+	width: 40%;
+	display: inline-block;
+	margin-left:10px;
+}
+.form--cvc{
+	grid-column: 2/1;
+}
+#cvc{
+	width: 100%;
+}
+
+.input--month{
+	width: 48%;
+	display: inline-block;
+}
+.button_confirm{
+	width: 100%;
+	height: 50px;
+	border:none;
+	border-radius: 5px;
+	background-color: hsl(278, 68%, 11%);
+	color: hsl(270, 3%, 87%);
+	font-weight: 500;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size:1rem;
+	cursor: pointer;
+	margin-top: .725rem;
+}
+.form--Completed{
+	width: 80%;
+	height: 400px;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+	gap:1rem;
+	margin: 0 auto;
+	display: none;
+}
+.form__title{
+	text-transform: uppercase;
+	color:hsl(278, 68%, 11%);
+}
+.form__text{
+	color:hsl(279, 6%, 55%);
+}
+
+@media (max-width: 1110px){
+	body{
+		background-size: 100% 35%;
+		padding: 0;
+	}
+	.main{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 50% 50%;
+		margin:2rem 2rem 0 2rem;
+		
+	}
+	.left__container{
+		grid-column: 1/2;
+		grid-row: 1/-2;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.right__container{
+		grid-column: 1/2;
+		grid-row: 2/-1;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		bottom: 40px;
+	}
+	.card{
+		width: 75%;
+		height: 100%;
+		background-size: cover;
+	}
+	.card--back{
+		margin-left: 0;
+	}
+	.card__codeSecurity{
+		top:49%;
+		right:-460px;
+	}
+	.card--front{
+		margin-bottom: 0;
+		position:relative;
+		bottom:17.5%;
+	}
+	.card__logo{
+		height: 50px;
+	}
+	.card__number{
+		font-size: 2.3rem;
+	}
+	.card__name, .card__data{
+		font-size: 1.3rem;
+	}
+	.form{
+		width: 100%;
+		height: 100%;
+		margin:0;
+
+	}
+	.form--Completed{
+		width: 100%;
+		height: 100%;
+	}
+
+}
+@media (max-width: 550px){
+	body{
+		background-image: url(../images/bg-main-mobile.png);
+		background-size:100% 30%;
+	}
+	.main{
+		margin:1rem 1rem 0 1rem;
+	}
+	.card{
+		width: 84%;
+		height:55%;
+	}
+	.card--front{
+		align-self: flex-start;
+		margin-left: 0;
+	}
+	.card__logo{
+		height: 30px;
+		margin-bottom: 2rem;
+	}
+	.card__number{
+		font-size: 18px;
+	}
+	.card__name, .card__data{
+		font-size: 15px;
+	}
+	.card--back{
+		align-self: flex-end;
+		margin-left: 0;
+	}
+	.input{
+		height: 35px;
+	}
+	.form__label{
+		font-size: 15px;
+	}
+	.card__codeSecurity{
+		top:44%;
+		right:-215px;
+	}
+
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <!--Css Styles-->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <main class="main">
+    <section class="left__container">
+      <div class="card card--front">
+        <img src="./assets/images/card-logo.svg" alt="logo card front" class="card__logo">
+        <p id="card__number" class="card__number">0000 0000 0000 0000</p>
+        <div class="card__information">
+          <p id="card__name" class="card__name">Jane Appleseed</p>
+          <p id="card__data" class="card__data">00/00</p>
+        </div>
+      </div>
+
+      <div class="card card--back">
+        <p id="card__cvc" class="card__codeSecurity">000</p>
+      </div>
+    </section>
+    <section class="right__container">
+      <form class="form">
+        <div class="form__control">
+          <label class="form__label" for="name">Nome do Titular</label>
+          <input name="name" type="text" id="name" class="input" placeholder="e.x. Jane Appleseed" autocomplete="false">
+          <small class="message">error</small>
+        </div>
+        <div class="form__control">
+          <label class="form__label" for="numberCard">Número do Cartão</label>
+          <input name="number" type="text" id="numberCard" class="input" placeholder="e.x. 1234 5678 9123 0000" autocomplete="false" maxlength="19">
+          <small class="message">error</small>
+        </div>
+        <div class="form__information">
+          <div class="form--data">
+          <label class="form__label" for="data">Exp. Data (MM/AA)</label>
+          <input name="month" type="text" id="data--month" class="input input--month" placeholder="MM" maxlength="2" autocomplete="false">
+          <input name="year" type="text" id="data--year" class="input input--month" placeholder="AA" maxlength="2" autocomplete="false">
+          <small class="message">error</small>
+          </div>
+          <div class="form__cvc">
+            <label class="form__label" for="cvc"> CVC</label>
+            <input name="cvcNumber" type="text" id="cvc" class="input" placeholder="e.x. 123" maxlength="3" autocomplete="false">
+            <small class="message">error</small>
+          </div>
+        </div>
+
+        <button id="button--submit" class="button_confirm">Confirma</button>
+      </form>
+      <div class="form--Completed">
+        <img src="./assets/images/icon-complete.svg" alt="image completed">
+        <h2 class="form__title">Obrigado!</h2>
+        <p class="form__text">Adicionamos os detalhes do seu Cartão.</p>
+        <button class="button_confirm">Continue</button>
+      </div>
+    </section>
+  </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
