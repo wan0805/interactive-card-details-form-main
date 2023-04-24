@@ -60,7 +60,7 @@ function doValidationName(){
 }
 
 
-inputNumberCard.addEventListener("keypress" , doMaskInputNumberCard);
+inputNumberCard.addEventListener("keydown" , doMaskInputNumberCard);
 
 function doMaskInputNumberCard(){
 	let inputNumberCardValue = inputNumberCard.value;
